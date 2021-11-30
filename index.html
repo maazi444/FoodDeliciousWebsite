@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <title>Food Delicious - Amazing Foods at your door step</title>
+</head>
+<body>
+
+   <div class="main_container" id="homeLink">
+        <!-- ============== Navigation Bar ================= -->
+
+        <div id="navbarOuter">
+            <div class="navbar-logo">
+                <p>Food <span>Delicious</span></p>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a class="homePage">Home</a></li>
+                    <li><a class="menuPage">Menu</a></li>
+                    <li><a class="foodPage">Food</a></li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="navbar-btns">
+                <img src="img/search_icon.png"/>
+                <button class="signUpBtn">Book Now</button>
+            </div>
+        </div>
+
+        <script>
+           window.addEventListener('scroll',(e)=>{
+                const nav = document.querySelector('#navbarOuter');
+                if(window.pageYOffset>0){
+                    nav.classList.add("add-shadow");
+                }else{
+                    nav.classList.remove("add-shadow");
+                }
+            });
+        </script>
+
+        <!-- ================= Main Area ================== -->
+
+        <section class="banner_img">
+            <div class="banner_left">
+                <div class="bannerHeading">
+                    <h1 class="bannerheading1">Healthy Food</h1>
+                    <p class="bannerheading2">ensures healthy life</p>
+                </div>
+                <div class="bannerParagraph">
+                    <p class="bannertext">We deliver the best quality<br/>taste and best experience</p>
+                </div>
+                <div class="bannerbtnText">
+                    <button class="viewMoreBtn">View More</button>
+                    <h3 class="dinnerHeading">Dinner:</h3>
+                    <p class="dinnerText">8:30 PM - 11:30 PM</p>
+                </div>
+            </div>
+            <div class="banner-right">
+                <img class="heroImage" src="img/Chief_pic.png" /> 
+            </div>
+        </section>
+
+        <!-- =================== Menu Area ===================== -->
+
+        <section id="menuSectionLink" class="menuSection">
+           <div class="menuHeadingDiv">
+                <p class="menuHeading">Menu</p>
+           </div>
+           <p class="menuUpperText">These are some top dishes available at our restaurants</p>
+           <div class="cardsSection">
+                <div class="card1">
+                    <div class="card1bg">
+
+                    </div>
+                    <div class="card1text">
+                        <p class="cardInnerHeading">Arabic Shawarma</p>
+                        <p class="cardInnerText">
+                            A delicious Arabic shawarma, dressed with rich and creamy garlic mayo to give the perfect shawarma experience.
+                        </p>
+                    </div>
+                    <button class="cardBtn">Read More</button>
+                </div>
+                <div class="card2">
+                    <div class="card2bg">
+
+                    </div>
+                    <div class="card2text">
+                        <p class="cardInnerHeading">Salad</p>
+                        <p class="cardInnerText">
+                            The term salad doesn’t just mean some lettuce drizzled with a dressing or vinaigrette. Instead, think of it as a meal that has multiple layers of flavor. Get your order now!
+                        </p>
+                    </div>
+                    <button class="cardBtn">Read More</button>
+                </div>
+                <div class="card3">
+                    <div class="card3bg">
+                     
+                    </div>
+                    <div class="card3text">
+                        <p class="cardInnerHeading">Kebab</p>
+                        <p class="cardInnerText">
+                            An Indian party's snack platter is incomplete without this delicious appetizer dish of seekh kabab.
+                            Served with mint chutney and a side of onion rings and lemon wedges, you won't need anything else to kick start the party!
+                        </p>
+                    </div>
+                    <button class="cardBtn">Read More</button>
+                </div>
+                <div class="card4">
+                    <div class="card4bg">
+                     
+                    </div>
+                    <div class="card4text">
+                        <p class="cardInnerHeading">Beef</p>
+                        <p class="cardInnerText">
+                            Get the best taste of your steak. We deliever the best of quality and taste with experience of more than 12 Years. So get ready a feel a different
+                             sensation.
+                        </p>
+                    </div>
+                    <button class="cardBtn">Read More</button>
+                </div>
+           </div>
+
+           <p class="detailsText">We have large number of dishes.<br/>Click the button below to view more.</p>
+
+            <div class="detailsBtnDiv">
+                <button class="detailsBtn"><a href="food.html">View More</a></button>
+            </div>
+
+        </section>
+
+        <!-- ========================== Footer Section ========================== -->
+
+        <footer class="footerSection">
+            <div class="footer1">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer2">
+                <h2>Address</h2>
+                <ul>
+                    <li><h4>Location: </h4><span>AGT Institute, Rawalpindi, Punjab, Pakistan</span></li>
+                    <li><h4>Phone Number: </h4><span>+92 0011324342</span></li>
+                    <li><h4>Email: </h4><span>info@foodelicious.com</span></li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <h1>Subscribe to our Newsletter!</h1>
+                <div class="newsletter">
+                    <form>
+                        <input type="email" class="newsletterInput"/>
+                        <input type="submit" class="newsletterBtn" value="Sign Up"/>
+                    </form>
+                </div>
+                <div>
+                    <span class="newsletterText ">Subscribe to our Newsletter and get latest updates and offers on your device.</span>
+                </div>
+            </div>
+        </footer>
+
+   </div>
+
+   <script src="js/script.js"></script>
+</body>
+</html>

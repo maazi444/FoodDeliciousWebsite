@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .centerDiv{
+            width: 70%;
+            height: 8rem;
+            background-color: #272727;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .colorParagraph{
+            margin: 0;
+            padding: 0;
+            margin: 5px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 32px;
+            font-family: segoe ui;
+        }
+
+        .btnChange{
+            border: 2px solid #fff;
+            background: transparent;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .colorSpan{
+            color: #0093e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="centerDiv">
+            <p class="colorParagraph">Background Color: <span class="colorSpan">#fff</span></p>
+            <button class="btnChange">Click Here</button>
+        </div>
+    </div>
+    <script>
+        let bodyColor = document.querySelector('.container');
+        let btnChanger = document.querySelector('.btnChange');
+        let spanTag = document.querySelector('.colorSpan');
+        let SimpleColors = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 'A', 'B', 'C', 'D', 'E', 'F'];
+        btnChanger.addEventListener('click',function(){
+            let hex = "#";
+            for(let i=0; i<6; i++)
+            {
+                hex += SimpleColors[randomColorGenerator()];
+            }
+            
+            bodyColor.style.backgroundColor = hex;
+            spanTag.textContent = hex;
+        });
+        function randomColorGenerator()
+        {
+            let randomColor = Math.floor(Math.random()*SimpleColors.length);
+            return randomColor;
+        }
+        
+    </script>
+</body>
+</html>
